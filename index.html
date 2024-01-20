@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HURULU WALAWWA</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>Hurulu Walawwa</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>Let's Merge With The Past And Find Freedom.</h2>
+                <p>To enjoy the luxurious lifestyle of the royals in the past for a few selected days, and also to experience a royal meal, dessert, and other food and drinks, come to Hurulu Valau to match that beautiful past with the present.</p>
+                <a href="log.html" </a>
+                <button type = "button" class = "head-btn">GET STARTED</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <a href="#header" </a>
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#customers">customers</a></li>
+            </ul>
+            
+            <button class = "btn sign-up">sign up</button>
+            
+            <button class = "btn log-in">log in</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food Service/ Food Runner</h2>
+                        <p>Our hotel, Hurulu Walawwa, works to provide delicious food and drinks to our customers in a friendly manner and has a wide range of local food as well as foreign food.</p>
+                        <p>There are many delicious dishes made from ancient Sri Lankan recipes. So try today and see the difference. Come and experience the freedom of an ancient world.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refreshment</h2>
+                        <p>Come to Hurulu Walawwa to spend your vacation with family in an ancient traditional royal house.</p>
+                        <p>Enjoy your life refreshingly, take a dip in the bath, see the ancient paintings, see the ancient ruins, look freely at the beautiful mountain range. 
+                            Come and spend some beautiful days with your mental freedom and remember.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>All rooms in the hotel are equipped with a kettle. Eagle Regency Hotel offers some units with pool views, and each room has a terrace. All units at the accommodations include air conditioning and a desk.
+
+                            The daily breakfast offers continental and buffet options. At Eagle Regency Hotel you will find a restaurant serving Chinese, 
+                            European and Asian cuisine. A halal option can also be requested.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <p>We have the ability to ensure 100% room security in our hotel. In particular, our company uses a very important safety system with new technology. Therefore, we can be confident that there will be no harm in any way. 
+                            It is a safe zone up to 10 km from our company and work is not done in a way that interferes with freedom in any way.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Book Now">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>rooms</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/03.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Deluxe Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                King-sized Bed or Twin Beds , Divided Living Area
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Fully Air-conditioned ,  Bathtub with Free Toiletries.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                24 Hour Room Service, In-Room Digital Safe.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Telephone with International Direct Dialling Facilities.
+                            </li>
+                        </ul>
+                        <p>Relax and experience all that Kandy has to offer in a spacious Deluxe Room at Hurulu Walawwa, a popular luxury Walaw hotel among Kandy hotels, Sri Lanka. Come back to a relaxing environment after a long day of exploring the beautiful land. </p><br>
+                        <p>A great choice for its exceptional value, the Deluxe Room at Kandy Ancient Walawwa has more space and amenities to make your stay unforgettable.</p>
+                        <p class = "rate">
+                            <span>$35.00 /</span>( Rs. 12 500 ) Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/04.jfif" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                King-sized Bed or Twin Beds, Fully Air-conditioned.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Tea and Coffee Making Facilities, Complimentary In-Room Snacks.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Telephone with International Direct Dialling Facilities, In-Room Digital Safe.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Stocked Mini-Fridge at Cost, 24 Hour Room Service.
+                            </li>
+                        </ul>
+                        <p>Our luxury hotel is perfect for those looking for honeymoon hotels in Kandy due to the beauty and charm of the Hurulu walawwe luxury room that adds to the lifelong memories our guests create in this award-winning Kandy luxury walaw hotel. The rooms are decorated to emphasize the city that surrounds it, with everything you need for a relaxing and comfortable stay. Indulge yourself in our private in-room Jacuzzi, the perfect end to a perfect day.</p>
+                        <p class = "rate">
+                            <span>$65.00 /</span> ( Rs. 23 500 ) Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/05.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Family Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                King-sized Bed or Twin Beds (2 King sized beds), Separate Living Area.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Fully Air-conditioned, LED TV with Satellite and Local Channels.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Writing Desk, In-Room Digital Safe, Stocked Mini-Fridge at Cost.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Telephone with International Direct Dialling Facilities, 24 Hour Room Service.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Tea and Coffee Making Facilities, Complimentary In-Room Snacks.
+                            </li>
+                        </ul>
+                        <p>Private rooms. Private balcony. Private jacuzzi. Family Rooms at Hurulu Walawwe offer a rich and comfortable experience that is unique among family hotels in Sri Lanka. Make our family rooms your private sanctuary during your holiday in Kandy. Classic furnishings with modern touches complement our five-star walaw hotel facilities and view of the majestic Kandy Hills.</p>
+                        <p class = "rate">
+                            <span>$99.00 /</span> ( Rs. 35 000 ) Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Beautiful Hotel.Amazing Location.</h3>
+                        <p>Stayed with my wife from 18th to 20th November, visiting Kandy for the first time and I'm glad we chose to stay at Hurulu Walawwa! The breathtaking views we could see from our room were undeniable. The best part was the location, when you leave the hotel, you are in the main city center with lots of amazing shops, bars and restaurants, then when you enter the hotel you are immersed in peace and tranquility. In the mountains.</p>
+                        <img src = "images/10.jpeg" alt = "customer image">
+                        <span>Sachithra Thilan, Austria</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Excellent Hotel I Will Never Forget</h3>
+                        <p>I have never seen such a beautiful hotel in my life. Very kind people and the breakfast are excellent. Thank you Hurulu Walawwa Hotel. There are many things to see along with many of Sri Lanka's oldest structures.
+                            We had only one night in this hotel but it was very comfortable. We had a huge family room which was perfect for a family of 5
+                        </p>
+                        <img src = "images/11.jpeg" alt = "customer image">
+                        <span>Thilan Madusanka, Sweden</span> 
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Excellent accommodation that exceeded expectations.</h3>
+                        <p>The check-in process was great. It was lovely after a long day of traveling/sightseeing to sit in comfy chairs and be given a lovely welcome drink while doing the check-in process.
+                            The room was a big surprise, it was huge; it even had another king-size bedroom in an upstairs loft !!! The views across the valley were lovely. The staff was excellent and lovely to chat with.</p>
+                        <img src = "images/099.jpg" alt = "customer image">
+                        <span>Jenny Lorenz, England</span>
+                    </div>
+                    <!-- end of single customer -->
+                  
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>This is a hotel site with ancient artifacts and historical value, which is fully owned by the Wijesinghe family and is still being carried forward by the same family.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex"> 
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            No 6/1A, Amunugama, Gunnepana, Kandy
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            081-2493498
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            info@naviya.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
