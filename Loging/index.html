@@ -1,0 +1,32 @@
+#Question_01 - created by Naveen Wijesinghe
+
+class NaviyaKamasutraCipher:
+    def __init__(self, key):
+        self.key = key.replace(" ", "")
+        self.half_key_length = len(self.key) // 2
+        self.opposite_chars = self.create_opposite_chars_map()
+
+    def split_key(self):
+        return self.key[:self.half_key_length], self.key[self.half_key_length:]
+
+    def create_opposite_chars_map(self):
+        opposite_chars = {}
+        first_half, second_half = self.split_key()
+        for char1, char2 in zip(first_half, second_half):
+            opposite_chars[char1] = char2
+            opposite_chars[char2] = char1
+        return opposite_chars
+
+    def encrypt_text(self, plaintext):
+        ciphertext = ""
+        for char in plaintext:
+            ciphertext += self.opposite_chars.get(char, char)
+        return ciphertext
+
+
+custom_cipher = NaviyaKamasutraCipher("w i r l z u b j q y c v f a x d m t e s n p g o k h")
+message = "naveen wijesinghe"
+encrypted_message = custom_cipher.encrypt_text(message)
+print("Encrypted Message:", encrypted_message)
+
+#All rights reserved -IT2020077
