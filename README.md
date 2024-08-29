@@ -1,5 +1,6 @@
 This is a simple website that I made for a project at my university. I used HTML/CSS/JS for this. This is a website created for a hotel group.
-And I have created a dashboard for this.
+And I have created a dashboard for this.<br>
+Site Demo - https://naveen-98.github.io/Hotel_Web/
 <br>
 <h1>Hotel Web Site DEMO</h1>
 
